@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+</body>
+<script>
+    let number = +prompt("Nhập số nguyên  tố cần in :");
+    let count = 0;
+    for (let N = 2; count < number; N++) {
+        let check = true;
+        for (let i = 2; i < N; i++) {
+            if (N % i == 0) {
+                console.log('vào if với i==', i)
+                console.log('giá trị N', N)
+                check = false;
+                break;
+            }
+        }
+        if (check == true) {
+            count++;
+            document.write(N + " ")
+        }
+    }
+</script>
+
+</html>
